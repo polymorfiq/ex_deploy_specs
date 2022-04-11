@@ -1,3 +1,8 @@
+/.elixir_ls/
+/.vscode/
+/priv/plts/*.plt
+/priv/plts/*.plt.hash
+
 # The directory Mix will write compiled artifacts to.
 /_build/
 
