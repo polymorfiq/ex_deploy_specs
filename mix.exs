@@ -10,7 +10,10 @@ defmodule ExDeploySpecs.MixProject do
       dialyzer: [
         plt_file: {:no_warn, "priv/plts/dialyzer.plt"}
       ],
-      deps: deps()
+      deps: deps(),
+      name: "ExDeploySpecs",
+      description: "A library for helping describle the deploy specifications for modules",
+      source_url: "https://github.com/polymorfiq/ex_deploy_specs"
     ]
   end
 
