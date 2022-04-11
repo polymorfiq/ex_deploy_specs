@@ -11,8 +11,9 @@ defmodule ExDeploySpecs.MixProject do
         plt_file: {:no_warn, "priv/plts/dialyzer.plt"}
       ],
       deps: deps(),
+      package: package(),
       name: "ExDeploySpecs",
-      description: "A library for helping describle the deploy specifications for modules",
+      description: "A library for helping describe the deploy specifications for modules",
       source_url: "https://github.com/polymorfiq/ex_deploy_specs"
     ]
   end
@@ -32,6 +33,15 @@ defmodule ExDeploySpecs.MixProject do
       {:credo, "~> 1.6", only: [:dev]},
       {:dialyxir, "~> 1.1", only: [:dev]},
       {:ex_doc, "> 0.0.0", only: [:dev]}
+    ]
+  end
+
+  defp package do
+    [
+      # This option is only needed when you don't want to use the OTP application name
+      name: "ex_deploy_specs",
+      licenses: ["AGPL-3.0-or-later"],
+      links: %{"GitHub" => "https://github.com/polymorfiq/ex_deploy_specs"}
     ]
   end
 end
